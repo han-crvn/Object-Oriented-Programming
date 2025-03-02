@@ -6,8 +6,11 @@ while True:
         num2 = float(input("Enter the second number: "))
 
         quotient = num1 / num2
-        print(quotient)
+        print(f"Quotient: {quotient}")
         break
     
     except ValueError:
         print("Invalid input.")
+
+    except ZeroDivisionError:
+        print("Number can not be divided by zero")

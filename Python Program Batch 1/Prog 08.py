@@ -2,16 +2,16 @@
 
 nums = []
 
-while True:
-    try:
-        for i in range(10):
-            num = float(input("Enter number: "))
-            
+for i in range(10):
+    while True:
+        try:
+            num = float(input(f"Enter number {i + 1}: "))
+
             if num % 2 != 0:
                 nums.append(num)
 
-        print(f"Odd numbers are {nums}.")
-        break
+            break
+        except ValueError:
+            print("Invalid input.")
 
-    except ValueError:
-        print("Invalid input.")
+print(f"The number of odd numbers is {len(nums)}.")

@@ -6,7 +6,7 @@ while True:
         num2 = float(input("Enter the second number: "))
 
         product = num1 * num2
-        print(product)
+        print(f"Product: {product}")
         break
     
     except ValueError:

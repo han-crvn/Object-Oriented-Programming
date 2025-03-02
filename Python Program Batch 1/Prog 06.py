@@ -6,7 +6,7 @@ while True:
         num2 = float(input("Enter the second number: "))
 
         raised = num1 ** num2
-        print(raised)
+        print(f"Raised: {raised}")
         break
     
     except ValueError:

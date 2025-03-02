@@ -2,15 +2,13 @@
 
 total = 0
 
-while True:
-    try:
+for i in range(10):
+    while True:
+        try:
+            num = float(input(f"Enter number {i + 1}: "))
+            total += num
+            break
+        except ValueError:
+            print("Invalid input.")
 
-        for i in range(10):
-            nums = float(input("Enter number: "))
-            total += nums
-
-        print(total)
-        break
-
-    except ValueError:
-        print("Invalid input.")
+print(f"Total sum: {total}")
